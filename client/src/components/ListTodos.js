@@ -6,9 +6,9 @@ const ListTodos = () => {
   const [todos, setTodos] = useState([]);
 
   //delete todo function
-
   const deleteTodo = async id => {
     try {
+      // eslint-disable-next-line
       const deleteTodo = await fetch(`http://localhost:5000/todos/${id}`, {
         method: "DELETE"
       });

@@ -9,6 +9,7 @@ const EditTodo = ({ todo }) => {
     e.preventDefault();
     try {
       const body = { description };
+      // eslint-disable-next-line
       const response = await fetch(
         `http://localhost:5000/todos/${todo.todo_id}`,
         {
@@ -46,7 +47,7 @@ const EditTodo = ({ todo }) => {
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Edit Todo</h4>
+              <h4 class="modal-title">Edit </h4>
               <button
                 type="button"
                 class="close"
